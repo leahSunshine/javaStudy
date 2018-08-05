@@ -45,5 +45,6 @@ public class Worker implements Runnable {
          for (int i =0; i<count;i++){
              new Thread(new Worker(i, barrier)).start();
          }
+         System.out.println("end=========");
 	}
 }
